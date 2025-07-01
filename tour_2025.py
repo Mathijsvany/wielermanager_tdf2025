@@ -82,7 +82,7 @@ df_season2025.head()
 excel_bestandsnaam = 'TOUR2025.xlsx'
 writer = pd.ExcelWriter(excel_bestandsnaam, engine='xlsxwriter')
 df_speciality.to_excel(writer, sheet_name='Procyclingstats', index=False)
-df_gt_tour_multiple_agg.to_excel(writer, sheet_name='GT_average', index=False)
+df_gt_tour_multiple_agg.to_excel(writer, sheet_name='GT_average')
 df_season2025.to_excel(writer, sheet_name='Season2025', index=False)
 
 print(f"Alle DataFrames zijn succesvol geëxporteerd naar '{excel_bestandsnaam}' met verschillende werkbladen.")
